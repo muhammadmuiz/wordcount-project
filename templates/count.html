@@ -1,0 +1,11 @@
+<h1>There are total {{count}} words.</h1>
+
+<h2>Entered text</h2>
+{{ fulltext }}<Br><Br>
+<a href="{%url 'home' %}">Move Back</a>
+<br><br><br><hr>
+
+{% for item, uniquecount in worddict %}
+{{ item }}
+{{ uniquecount }}<br>
+{% endfor %}
